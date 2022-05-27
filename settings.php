@@ -10,22 +10,13 @@
 <body>
     <h1>hello</h1>
     <!-- check box -->
-    <div class="form-group">
-        <input type="checkbox" name="check1" id="check1" checked>
-        <label for="checkbox">First name</label>
-    </div>
-    <div class="form-group">
-        <input type="checkbox" name="check2" id="check2" checked>
-        <label for="checkbox">Last name</label>
-    </div>
+
+
     <div class="form-group">
         <input type="checkbox" name="check3" id="check3" checked>
         <label for="checkbox">Email</label>
     </div>
-    <div class="form-group">
-        <input type="checkbox" name="check4" id="check4" checked>
-        <label for="checkbox">Phone</label>
-    </div>
+
     <div class="form-group">
         <input type="checkbox" name="check5" id="check5" checked>
         <label for="checkbox">Subject</label>
@@ -38,22 +29,12 @@
     <button class="btn btn-primary" id="btn">save input</button>
     <script>
         // enable all input by default
-        if (check1.checked === true) {
-            localStorage.removeItem("Fname");
-            localStorage.setItem('Fname', 'block');
-        }
-        if (check2.checked === true) {
-            localStorage.removeItem("Lname");
-            localStorage.setItem('Lname', 'block');
-        }
+   
         if (check3.checked === true) {
             localStorage.removeItem("email");
             localStorage.setItem('email', 'block');
         }
-        if (check4.checked === true) {
-            localStorage.removeItem("phone");
-            localStorage.setItem('phone', 'block');
-        }
+     
         if (check5.checked === true) {
             localStorage.removeItem("subject");
             localStorage.setItem('subject', 'block');
@@ -65,24 +46,7 @@
         // btn my function with btn id
         var btn = document.getElementById("btn");
         btn.addEventListener("click", function() {
-            //check1 for first name
-            const check1 = document.getElementById('check1');
-            const Fname = document.getElementById('Fname');
-            if (check1.checked === true) {
-                localStorage.removeItem("Fname");
-                localStorage.setItem('Fname', 'block');
-            } else {
-                localStorage.removeItem("Fname");
-                localStorage.setItem('Fname', 'none');
-            }
-            //check2 for last name
-            const check2 = document.getElementById('check2');
-            const Lname = document.getElementById('Lname');
-            if (check2.checked === true) {
-                localStorage.setItem('Lname', 'block');
-            } else {
-                localStorage.setItem('Lname', 'none');
-            }
+     
             //check3 for email
             const check3 = document.getElementById('check3');
             const email = document.getElementById('email');
@@ -99,14 +63,7 @@
             } else {
                 localStorage.setItem('subject', 'none');
             }
-            //check5 for phone
-            const check4 = document.getElementById('check4');
-            const phone = document.getElementById('phone');
-            if (check4.checked === true) {
-                localStorage.setItem('phone', 'block');
-            } else {
-                localStorage.setItem('phone', 'none');
-            }
+          
             //check6 for message
             const check6 = document.getElementById('check6');
             const message = document.getElementById('message');

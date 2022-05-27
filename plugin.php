@@ -59,4 +59,4 @@ function deleteTable() {
     $wpdb->query($sql);
     delete_option("devnote_plugin_db_version");
 }
-register_deactivation_hook( FILE, 'deleteTable' );
+register_deactivation_hook( __FILE__, 'deleteTable' );
