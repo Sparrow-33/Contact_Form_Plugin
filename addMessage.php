@@ -19,23 +19,19 @@ if(isset($_POST['submit'])){
 }
 
 ?>
-<h1>Add New Message</h1>
+<h1 style="text-align:center;">Add New Message</h1>
+<div class="" style="display:flex; justify-content:center;">
 <form method='post' action=''>
   
-
-      <input type='email' id="email" name='email' placeholder="Email .."> <br><br>
-    
-    <input type='text' id="subject" name='subject' placeholder="Subject .."><br><br>
+    <input type='email' id="email" name='email' style="padding:1em 2em ; border:solid 1px black; border-radius:5px;  " placeholder="Email .."> <br><br>
+    <input type='text' id="subject" name='subject' style="padding:1em 2em ; border:solid 1px black; border-radius:5px;  " placeholder="Subject .."><br><br>
  
+    <input type='text' id="mssg" name='message' style="padding:1em 2em ; border:solid 1px black; border-radius:5px; " placeholder="Message .."><br><br>
+    <span>&nbsp;</span>
+    <input type='submit' style="padding: 0.5em 2em; background:#0EA5E9; border:none; border-radius:100vh; color:aliceblue; font:500; border-radius:5px; " name='submit' value='Send'>
  
-    <input type='text' id="mssg" name='message' placeholder="Message .."><br><br>
-
-     <span>&nbsp;</span>
-     <input type='submit' name='submit' value='Send'>
- 
-
 </form>
-
+</div>
 
 <script >
   // first name

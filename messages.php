@@ -1,9 +1,10 @@
+
 <?php
 
 global $wpdb;
 $tablename = $wpdb->prefix."plugin";
-if(isset($_GET['id'])){
-  $id = $_GET['id'];
+if(isset($_POST['id'])){
+  $id = $_POST['id'];
   $wpdb->query("DELETE FROM ".$tablename." WHERE id=".$id);
 }
 ?>
@@ -33,7 +34,10 @@ if(isset($_GET['id'])){
       <td>".$email."</td>
       <td>".$subject."</td>
       <td>".$message."</td>
-      <td><a href='?id=".$id."'>Delete</a></td>
+     <td><form action='' method='POST'>
+        <input type='text' name='id' value='$id' hidden> 
+        <button type='submit' class='btn btn-danger' name=''>Delete</button>
+      </form></td> 
       </tr>
       ";
       $count++;

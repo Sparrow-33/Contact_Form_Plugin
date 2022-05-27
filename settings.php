@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
 
 
     <div class="form-group">
-        <input type="checkbox" name="check3" id="check3" checked>
+        <input type="checkbox" name="check3" id="check3"  checked>
         <label for="checkbox">Email</label>
     </div>
 
@@ -21,10 +22,12 @@
         <input type="checkbox" name="check5" id="check5" checked>
         <label for="checkbox">Subject</label>
     </div>
+
     <div class="form-group">
         <input type="checkbox" name="check6" id="check6" checked>
         <label for="checkbox">Message</label>
     </div>
+
     <!-- <button type="button" class="btn btn-primary" onclick="HandleClick()">save input</button> -->
     <button class="btn btn-primary" id="btn">save input</button>
     <script>
